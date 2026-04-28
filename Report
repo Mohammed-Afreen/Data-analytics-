@@ -1,0 +1,116 @@
+CRYPTO COIN ANALYSIS – INTERNSHIP PROJECT REPORT
+Introduction
+
+The cryptocurrency market is highly volatile and dynamic, making it challenging for investors to make informed decisions. This project focuses on developing an interactive Excel-based analytical solution that helps investors compare crypto coins, track price movements, analyze liquidity, and identify better investment opportunities. The solution is designed using advanced Excel features such as formulas, charts, slicers, KPIs, and VBA automation.
+Objective of the Project
+
+The main objective of this project is to assist investors in making data-driven decisions by:
+
+Comparing two crypto coins based on key metrics
+Analyzing price changes over different time periods
+Identifying top-performing coins
+Understanding liquidity distribution
+Filtering coins based on investor preferences
+Providing insights for low-budget investment strategies
+Task 1: Crypto Coin Comparison
+
+In this task, a comparison dashboard is developed where users can input two crypto coin names. Based on the entered coin names, the system automatically updates the following details:
+
+Symbol
+Price
+Volume
+Market Capitalization
+Circulating Supply
+
+To ensure accuracy, data validation is applied to the input fields with the following conditions:
+
+Coin name length must be greater than 2 and less than 11 characters
+Numeric values are not allowed
+Task 2: Price Change Analysis
+
+This task focuses on identifying the price increase of crypto coins compared to their previous one-hour price. The one-hour percentage change is considered as a positive growth indicator.
+
+The following features are implemented:
+
+Identification of top 10 coins based on price change
+Comparison chart showing current price vs previous price
+Slicer to filter coins based on price ranges:
+Greater than or equal to $10
+Up to $10
+
+A supporting table is also created to display coin symbols along with their price changes. This visualization helps investors understand short-term market trends.
+Task 3: Data Collection and Trend Analysis
+
+In this task, data of 200 crypto coins is collected, including:
+
+Coin name
+Current price
+Percentage changes (1 hour, 24 hours, 7 days)
+
+Assumptions made:
+
+1-hour and 7-day percentages represent positive change
+24-hour percentage represents negative change
+
+A filtered analysis is performed for coins within the price range of $0 to $5. A chart is created to show:
+
+Price before 7 days
+Price before 24 hours
+
+The top 10 coins are selected based on 1-hour price change. This helps in identifying coins with potential growth.
+Task 4: Liquidity Analysis
+
+Liquidity is analyzed using the Volume (24 hours) metric. A slicer is created to categorize coins based on price:
+
+$0 to $50
+Greater than $50
+
+A pie chart is developed to display:
+
+Top 5 coins based on volume
+Remaining coins grouped as “Others”
+
+This dynamic chart updates based on slicer selection, allowing investors to understand how liquidity is distributed across different price categories.
+Task 5: Sentiment-Based Filtering and Security
+
+This task introduces investor sentiment and workbook security.
+
+Filtering is applied to select coins whose names:
+
+Start with vowels (A, E, I, O, U)
+Start with letters B, C, and D
+
+A chart is created to display the top 10 coins based on Volume (24 hours), representing liquidity.
+Task 6: KPI-Based Investment Strategy
+
+This task focuses on helping low-budget investors maximize profit by identifying stable coins.
+
+Assumptions:
+
+1 hour, 24 hours, and 7 days percentage changes indicate downfall
+
+A slicer is created with price ranges:
+
+$0 – 0.05
+$0.05 – 0.5
+$0.5 – 5
+$5 – 50
+Greater than $50
+
+Five KPIs are developed:
+
+Coin Name
+Coin Symbol
+Price
+Average Downfall Percentage
+Total Number of Coins
+Tools and Technologies Used
+Microsoft Excel
+Pivot Tables and Charts
+Data Validation
+Excel Functions (XLOOKUP, IF, etc.)
+Slicers
+VBA (Visual Basic for Applications)
+Conclusion
+
+This project successfully provides a comprehensive crypto analysis solution using Excel. It enables investors to compare coins, analyze trends, and make informed decisions through interactive dashboards and KPIs. The use of automation and visualization enhances usability and efficiency.
